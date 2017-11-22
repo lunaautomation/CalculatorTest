@@ -16,12 +16,9 @@ namespace Caculator
                 return returned;
             }
             var array = inward.Split(',');
-            
-
             foreach (var number in array)
             {
-                int add = int.Parse(number);
-                returned = returned + add;
+                returned = returned + int.Parse(number);
             }
             if (returned == 0)
             {
